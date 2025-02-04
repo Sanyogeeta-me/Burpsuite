@@ -53,7 +53,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'vulnerable-site'
+          app-name: 'DAST'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B7D9764D255E4DF794CC59EACC3F2DEA }}
           package: .
